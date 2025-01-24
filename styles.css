@@ -1,7 +1,7 @@
 /* General Reset */
 body, h1, p, button {
-    margin: 0;
-    padding: 0;
+    margin: 1%;
+    padding: 5%;
     box-sizing: border-box;
 }
 
@@ -14,6 +14,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+   
 }
 
 /* Container */
@@ -43,39 +44,40 @@ header p {
 /* Instructions Icon */
 /* Instructions Icon */
 .instructions-icon {
-    position: fixed; /* Change to fixed for corner positioning */
-    top: 20px; /* Adjust to place it in the top corner */
-    right: 20px; /* Adjust for right corner */
-    cursor: pointer;
-    z-index: 1000; /* Make sure it's above other elements */
+    position: absolute; /* Change to fixed for corner positioning */
+    top:5%; /* Adjust to place it in the top corner */
+    right: 5%;/* Adjust for right corner */
+      cursor: pointer;
+    z-index: 50; /* Make sure it's above other elements */
 }
 
 /* Info Icon */
 .info-icon {
-    font-size: 2rem; /* Increase size for better visibility */
+    font-size: 25px; /* Increase size for better visibility */
     color: white;
-    background-color: #ff7675;
+    background-color: #ff4422;
     border-radius: 50%;
-    padding: 15px;
+    padding: 10px;
     display: inline-block;
     text-align: center;
-    line-height: 1;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    line-height: 0.5;
+   width:15px;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Instructions Popup */
 .instructions-popup {
     display: none;
     position: absolute;
-    top: 50px; /* Adjust position relative to the icon */
-    left: 0;
+    right: 50%; /* Adjust position relative to the icon */
+   top: 50%;
     background-color: white;
     color: #333;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     min-width: 200px;
-    z-index: 1000;
+    z-index: 50;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
