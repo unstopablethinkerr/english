@@ -1,19 +1,34 @@
 let sentences = [];
-let currentSentenceIndex = 0;
+let usedIndexes = new Set();
 
 // Fetch sentences from JSON
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
         sentences = data;
-        displaySentence(sentences[currentSentenceIndex].incorrect);
+        displayRandomSentence();
     })
     .catch(error => console.error('Error loading JSON:', error));
 
-// Display the current sentence
-function displaySentence(sentence) {
+// Display a random sentence
+function displayRandomSentence() {
     const container = document.getElementById('sentence-container');
     container.innerHTML = '';
+
+    if (usedIndexes.size === sentences.length) {
+        // Reset if all sentences are used
+        usedIndexes.clear();
+    }
+
+    let randomIndex;
+    do {
+        randomIndex = Math.floor(Math.random() * sentences.length);
+    } while (usedIndexes.has(randomIndex));
+
+    usedIndexes.add(randomIndex);
+    currentSentenceIndex = randomIndex;
+
+    const sentence = sentences[randomIndex].incorrect;
     const words = sentence.split(' ');
     words.forEach((word, index) => {
         const wordSpan = document.createElement('span');
@@ -48,9 +63,8 @@ function handleWordClick(word, index) {
     }
 }
 
-// Move to the next sentence
+// Move to the next random sentence
 document.getElementById('next-button').addEventListener('click', () => {
-    currentSentenceIndex = (currentSentenceIndex + 1) % sentences.length;
-    displaySentence(sentences[currentSentenceIndex].incorrect);
+    displayRandomSentence();
     document.getElementById('next-button').style.display = 'none';
 });
