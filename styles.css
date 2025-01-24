@@ -1,0 +1,19 @@
+#sentence-container {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+#sentence-container span {
+  cursor: pointer;
+  padding: 4px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#sentence-container span.correct {
+  color: green;
+}
+
+#sentence-container span.incorrect {
+  color: red;
+}
