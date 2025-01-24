@@ -1,0 +1,158 @@
+[
+    {
+        "incorrect": "He is plays.",
+        "correct": "He plays."
+    },
+    {
+        "incorrect": "She don't like apples.",
+        "correct": "She doesn't like apples."
+    },
+    {
+        "incorrect": "They was playing soccer.",
+        "correct": "They were playing soccer."
+    },
+    {
+        "incorrect": "I can plays the guitar.",
+        "correct": "I can play the guitar."
+    },
+    {
+        "incorrect": "We has finished our homework.",
+        "correct": "We have finished our homework."
+    },
+    {
+        "incorrect": "The books is on the table.",
+        "correct": "The books are on the table."
+    },
+    {
+        "incorrect": "He don't knows the answer.",
+        "correct": "He doesn't know the answer."
+    },
+    {
+        "incorrect": "The childrens are playing outside.",
+        "correct": "The children are playing outside."
+    },
+    {
+        "incorrect": "There is many apples in the basket.",
+        "correct": "There are many apples in the basket."
+    },
+    {
+        "incorrect": "He go to school everyday.",
+        "correct": "He goes to school every day."
+    },
+    {
+        "incorrect": "She were happy with the results.",
+        "correct": "She was happy with the results."
+    },
+    {
+        "incorrect": "We was late for the meeting.",
+        "correct": "We were late for the meeting."
+    },
+    {
+        "incorrect": "He have a lot of friends.",
+        "correct": "He has a lot of friends."
+    },
+    {
+        "incorrect": "She don't needs help.",
+        "correct": "She doesn't need help."
+    },
+    {
+        "incorrect": "They was tired after the game.",
+        "correct": "They were tired after the game."
+    },
+    {
+        "incorrect": "I has a new phone.",
+        "correct": "I have a new phone."
+    },
+    {
+        "incorrect": "She can sings beautifully.",
+        "correct": "She can sing beautifully."
+    },
+    {
+        "incorrect": "The dogs is barking loudly.",
+        "correct": "The dogs are barking loudly."
+    },
+    {
+        "incorrect": "He don't like to dance.",
+        "correct": "He doesn't like to dance."
+    },
+    {
+        "incorrect": "We needs to leave now.",
+        "correct": "We need to leave now."
+    },
+    {
+        "incorrect": "She were wearing a red dress.",
+        "correct": "She was wearing a red dress."
+    },
+    {
+        "incorrect": "They was waiting for the bus.",
+        "correct": "They were waiting for the bus."
+    },
+    {
+        "incorrect": "He have two sisters.",
+        "correct": "He has two sisters."
+    },
+    {
+        "incorrect": "The cat was on it's back.",
+        "correct": "The cat was on its back."
+    },
+    {
+        "incorrect": "She don't has any money.",
+        "correct": "She doesn't have any money."
+    },
+    {
+        "incorrect": "There was many people at the party.",
+        "correct": "There were many people at the party."
+    },
+    {
+        "incorrect": "He were very tired yesterday.",
+        "correct": "He was very tired yesterday."
+    },
+    {
+        "incorrect": "They don't likes pizza.",
+        "correct": "They don't like pizza."
+    },
+    {
+        "incorrect": "She were reading a book.",
+        "correct": "She was reading a book."
+    },
+    {
+        "incorrect": "The cars is parked outside.",
+        "correct": "The cars are parked outside."
+    },
+    {
+        "incorrect": "He don't knows what to do.",
+        "correct": "He doesn't know what to do."
+    },
+    {
+        "incorrect": "She have a beautiful voice.",
+        "correct": "She has a beautiful voice."
+    },
+    {
+        "incorrect": "They was walking in the park.",
+        "correct": "They were walking in the park."
+    },
+    {
+        "incorrect": "I has finished my homework.",
+        "correct": "I have finished my homework."
+    },
+    {
+        "incorrect": "The childs are playing in the garden.",
+        "correct": "The children are playing in the garden."
+    },
+    {
+        "incorrect": "There is too many options.",
+        "correct": "There are too many options."
+    },
+    {
+        "incorrect": "He go to the gym every day.",
+        "correct": "He goes to the gym every day."
+    },
+    {
+        "incorrect": "She don't wants to come.",
+        "correct": "She doesn't want to come."
+    },
+    {
+        "incorrect": "They was very happy to see us.",
+        "correct": "They were very happy to see us."
+    }
+]
