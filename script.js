@@ -16,7 +16,7 @@ function displayRandomSentence() {
     container.innerHTML = '';
 
     if (usedIndexes.size === sentences.length) {
-        // Reset if all sentences are used
+        // Reset used indexes if all sentences are shown
         usedIndexes.clear();
     }
 
@@ -26,21 +26,19 @@ function displayRandomSentence() {
     } while (usedIndexes.has(randomIndex));
 
     usedIndexes.add(randomIndex);
-    currentSentenceIndex = randomIndex;
+    const sentence = sentences[randomIndex];
+    const words = sentence.incorrect.split(' ');
 
-    const sentence = sentences[randomIndex].incorrect;
-    const words = sentence.split(' ');
     words.forEach((word, index) => {
         const wordSpan = document.createElement('span');
         wordSpan.textContent = word;
-        wordSpan.addEventListener('click', () => handleWordClick(word, index));
+        wordSpan.addEventListener('click', () => handleWordClick(word, index, sentence.correct));
         container.appendChild(wordSpan);
     });
 }
 
 // Handle word click
-function handleWordClick(word, index) {
-    const correctSentence = sentences[currentSentenceIndex].correct;
+function handleWordClick(word, index, correctSentence) {
     const correctWords = correctSentence.split(' ');
 
     if (correctWords[index] !== word) {
