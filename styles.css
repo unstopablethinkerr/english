@@ -39,6 +39,39 @@ header p {
     margin-bottom: 20px;
 }
 
+/* Instructions Icon */
+.instructions-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.info-icon {
+    font-size: 1.5rem;
+    color: white;
+    background-color: #ff7675;
+    border-radius: 50%;
+    padding: 5px;
+    display: inline-block;
+}
+
+.instructions-popup {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.instructions-icon:hover .instructions-popup {
+    display: block;
+}
+
 /* Sentence Container */
 .sentence-container {
     display: flex;
